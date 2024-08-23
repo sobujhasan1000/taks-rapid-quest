@@ -1,8 +1,8 @@
-import BarChart from "@/app/Components/Chart/BarChart";
 import React from "react";
 import SalesGroth from "../Components/saleGroth/SalesGroth";
 import CustomerAddTime from "../Components/CustomerAddTime/CustomerAddTime";
 import RepeteCustomer from "../Components/RepeteCutomer/RepeteCustomer";
+import BarChart from "../Components/Chart/BarChart";
 
 export default async function Home() {
   try {
@@ -70,7 +70,7 @@ export default async function Home() {
     const repeatCustomerData = await repeatCustomerRes.json();
     // console.log(customerAddData);
     return (
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-slate-200 gap-4 p-4">
         <BarChart labels={labels} data={data} />
         <SalesGroth data={salesGrowthData} />
         <CustomerAddTime data={customerAddData} />

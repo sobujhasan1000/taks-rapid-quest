@@ -81,9 +81,11 @@ const RepeteCustomer = ({ data }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8">
-      <h2>Repeat Customers</h2>
-      <Bar data={chartData} options={chartOptions} />
+    <div className="p-2">
+      <div className="bg-white shadow-lg rounded-lg p-2">
+        <h2>Repeat Customers</h2>
+        <Bar data={chartData} options={chartOptions} />
+      </div>
     </div>
   );
 };

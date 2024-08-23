@@ -86,14 +86,14 @@ const BarChart = ({ labels, data }) => {
   };
   // console.log(barData);
   return (
-    <div className="p-8">
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
+    <div className="">
+      <div className=" gap-2">
         {/* Bar Chart */}
         <div className="bg-white shadow-lg rounded-lg p-2">
           <h2 className="text-xl font-bold text-gray-700 mb-4">
             Total sales Chart
           </h2>
-          <div className="h-80">
+          <div className="">
             <Bar data={barData} />
           </div>
         </div>

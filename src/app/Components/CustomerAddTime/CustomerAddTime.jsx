@@ -30,9 +30,11 @@ const CustomerAddTime = ({ data }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8">
-      <h2>New Customers Added Over Time</h2>
-      <Bar data={chartData} options={options} />
+    <div className="p-2">
+      <div className="bg-white shadow-lg rounded-lg p-2">
+        <h2>New Customers Added</h2>
+        <Bar data={chartData} options={options} />
+      </div>
     </div>
   );
 };

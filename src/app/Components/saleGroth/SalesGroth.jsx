@@ -63,7 +63,7 @@ const SalesGroth = ({ data }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8">
+    <div className="bg-white shadow-lg rounded-lg p-2">
       <h1>Sales Growth Chart</h1>
       <Line data={chartData} options={options} />
     </div>

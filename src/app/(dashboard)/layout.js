@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlHome } from "react-icons/sl";
 
 const CommonLayOut = ({ children }) => {
   return (
@@ -20,14 +21,15 @@ const CommonLayOut = ({ children }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-40 min-h-full bg-cyan-200 text-base-content space-y-6">
+        <ul className="menu p-4 w-40 min-h-full bg-cyan-100 text-base-content space-y-6">
           {/*site bar  */}
 
           <li>
+            <SlHome className="text-xl text-red-400 font-bold" />
             <Link href="/">home</Link>
           </li>
           <li>
-            <Link href="/">Dashboard Home</Link>
+            <Link href="/">Dashboard</Link>
           </li>
         </ul>
       </div>
