@@ -20,7 +20,7 @@ const CommonLayOut = ({ children }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-cyan-200 text-base-content space-y-6">
+        <ul className="menu p-4 w-40 min-h-full bg-cyan-200 text-base-content space-y-6">
           {/*site bar  */}
 
           <li>

@@ -80,29 +80,31 @@ const BarChart = ({ labels, data }) => {
           "rgba(153, 102, 255, 1)",
           "rgba(255, 159, 64, 1)",
         ],
-        borderWidth: 1,
+        borderWidth: 2,
       },
     ],
   };
-  console.log(barData);
+  // console.log(barData);
   return (
     <div className="p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
         {/* Bar Chart */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-xl font-bold text-gray-700 mb-4">Bar Chart</h2>
-          <div className="w-2/2 h-80">
+        <div className="bg-white shadow-lg rounded-lg p-2">
+          <h2 className="text-xl font-bold text-gray-700 mb-4">
+            Total sales Chart
+          </h2>
+          <div className="h-80">
             <Bar data={barData} />
           </div>
         </div>
 
         {/* Pie Chart */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
+        {/* <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-xl font-bold text-gray-700 mb-4">Pie Chart</h2>
           <div className="w-2/2 h-80">
             <Pie data={pieData} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
